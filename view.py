@@ -1,4 +1,5 @@
 import random
+import requests
 
 def gen_low_letters():
 
@@ -6,3 +7,8 @@ def gen_low_letters():
 
     for i in list_a:
         print(i, end=',')
+
+def get_response(url):
+
+   res = requests.get(url)
+   return res.content.decode()
