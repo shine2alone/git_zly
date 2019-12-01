@@ -16,3 +16,12 @@ def get_response(url):
 def post_data(url, data):
     headers = {"user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"}
     return requests.post(url, data=data, headers=headers).content.decode()
+
+def print_letter_Lowercase():
+    for i in range(97, 123):
+        print(chr(i))
+
+
+
+if __name__ == '__main__':
+    print_letter_Lowercase();
